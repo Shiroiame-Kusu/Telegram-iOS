@@ -57,7 +57,8 @@ jobs:
             --configurationPath="build-system/appstore-configuration.json" \
             --no-codesign \
             --configuration=release_arm64 \
-            --buildNumber="$BUILD_NUMBER"
+            --buildNumber="$BUILD_NUMBER" \
+            --xcodeManagedCodesigning
 
           # collect ipa
           OUTPUT_PATH="build/artifacts"
