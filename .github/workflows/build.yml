@@ -55,7 +55,6 @@ jobs:
             --bazelUserRoot="$BAZEL_USER_ROOT" \
             build \
             --configurationPath="build-system/appstore-configuration.json" \
-            --no-codesign \
             --configuration=release_arm64 \
             --buildNumber="$BUILD_NUMBER" \
             --xcodeManagedCodesigning
